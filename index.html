@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Libros — Marketing y Diseño Gráfico</title>
+  <style>
+    body{font-family:system-ui,-apple-system,Segoe UI,Roboto,"Helvetica Neue",Arial;margin:0;padding:var(--pad,20px);background:#f7f7fb;color:#111}
+    header{display:flex;align-items:center;gap:12px;margin-bottom:18px}
+    h1{margin:0;font-size:1.6rem}
+    .container{max-width:900px;margin:0 auto}
+    .book{background:white;padding:14px;border-radius:10px;box-shadow:0 6px 14px rgba(20,20,40,0.06);margin-bottom:12px;display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
+    .cover{width:72px;height:96px;object-fit:cover;border-radius:6px;background:#eee;display:block}
+    .meta{font-size:0.95rem}
+    .meta small{color:#666}
+    .tags{margin-top:8px}
+    .tag{display:inline-block;background:#eef;margin-right:6px;padding:4px 8px;border-radius:999px;font-size:0.78rem;color:#125}
+    footer{margin-top:28px;color:#666;font-size:0.9rem}
+    a{color:inherit}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Repositorio — Libros de Marketing y Diseño Gráfico</h1>
+    </header>
+
+    <!-- Lista de libros: copia este bloque por cada libro nuevo -->
+    <article class="book">
+      <img class="cover" src="https://via.placeholder.com/72x96?text=Portada" alt="Portada">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <div>
+            <strong>Designing Brand Identity</strong><br>
+            <small class="meta">Autor: Alina Wheeler · Año: 2009</small>
+          </div>
+          <div style="text-align:right">
+            <a href="https://www.example.com" target="_blank" rel="noopener">Enlace / Comprar</a>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">Branding</span>
+          <span class="tag">Identidad</span>
+        </div>
+        <p style="margin-top:8px;color:#444;font-size:0.95rem">Resumen breve o nota personal sobre por qué lo recomiendo. Aquí puedes añadir ediciones, páginas.</p>
+      </div>
+    </article>
+    <!-- Fin bloque libro -->
+
+    <!-- Ejemplo adicional -->
+    <article class="book">
+      <img class="cover" src="https://via.placeholder.com/72x96?text=Portada" alt="Portada">
+      <div>
+        <div style="display:flex;justify-content:space-between;align-items:flex-start">
+          <div>
+            <strong>Don't Make Me Think</strong><br>
+            <small class="meta">Autor: Steve Krug · año: 2014</small>
+          </div>
+          <div style="text-align:right">
+            <a href="https://www.example.com" target="_blank" rel="noopener">Enlace / Comprar</a>
+          </div>
+        </div>
+        <div class="tags">
+          <span class="tag">UX</span>
+          <span class="tag">Usabilidad</span>
+        </div>
+        <p style="margin-top:8px;color:#444;font-size:0.95rem">Buena lectura para entender la usabilidad en productos digitales.</p>
+      </div>
+    </article>
+
+    <footer>
+      <p>¿Cómo agregar más libros? Edita este archivo (index.html) en GitHub y copia/pega uno de los bloques <code>&lt;article class="book"&gt;</code>, cambiando título, autor y enlace.</p>
+      <p>Nota: solo enlaza a fuentes legales (editoriales, librerías, Open Library, Project Gutenberg para obras de dominio público).</p>
+    </footer>
+  </div>
+</body>
+</html>
